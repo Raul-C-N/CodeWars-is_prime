@@ -1,3 +1,5 @@
+# WORK IN PROGRESS
+
 This is a CodeWars PHP language Kata exercise.
 
 Instructions are bellow:

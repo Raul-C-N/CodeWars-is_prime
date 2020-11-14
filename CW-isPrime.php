@@ -9,7 +9,19 @@ function is_prime(int $n):bool{
         echo "divisivel por 2";
         return False;
     }
-}
+    // given an number $n, check if it is divisible by
+    // any number between $n and sqrt($n).
+    //if it is: $n is composite
+    //if it is not: $n is prime
+    
+    /*
+    else {
+        for ($i=0; sqrt($n) < ;sqrt($n)i++) sqrt($n)
+            # code...
+        }
+    */
+    }
+
 
 ?>
 
@@ -20,8 +32,13 @@ function is_prime(int $n):bool{
 
 <?php // testing area | setor de testes
 echo 2%2;
+echo "<br>";
 is_prime(2);
 
+$n = 9;
+for ($i=2; sqrt($n) < $i ; $i++) { 
+    echo $i,"<br>";
+}
 /*    function test($var){
         if ($var == 1 or $var == -1 or $var == -3 or $var == 9) {
             $result = FALSE;
