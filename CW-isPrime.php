@@ -1,39 +1,30 @@
 <?php
 
 function is_prime(int $n):bool{
-    if ($n<=1) {
-        //echo "menor ou igual a 1</br>";
+    //base test - all numbers equal or inferior to one are NOT prime
+    if ($n<=1) { 
         return False;
     }
+    //base test - number 2 is the only even prime number
     else if ($n == 2) {
         return True;
     }
+    //We opted to use trial test - README.md for more info
     else if ($n%2==0) {
-        //echo "divisivel por 2</br>";
         return False;
     }
-    // given an number $n, check if it is divisible by
-    // any number between $n and sqrt($n).
-    //if it is: $n is composite
-    //if it is not: $n is prime
-    
-    
+    /* given an number $n, check if it is divisible by
+    any number between $n and sqrt($n).
+    if it is: $n is composite
+    if it is not: $n is prime*/
+       
     else {
         for ($i=2; $i <= sqrt($n) ; $i++) { 
-            //echo "<p>",$i,"</p>";
-            //echo "<br>",$n," é divisível por ",$i,"?<br>";
             if ($n%$i==0){
-                //echo "SIM";
                 return False;
-                //break;
-            }
-            else {
-                //echo "NÃO </br>";   //COMO SAIR DO LOOP QUANDO TUDO FOR NEGATIVO?
-        
             }
         }
-        //echo "é primo</br>";
-        return True; // VERIFICAR SE SAI SÓ AQUI OU SE SAI SEMPRE
+        return True;
         
     }
     
@@ -99,7 +90,7 @@ test (19); //primo
 
 echo "<p>deveria estar na branch new</p>";
 */
-is_prime(1009);
+var_dump (is_prime(1009));
 
 
 ?>

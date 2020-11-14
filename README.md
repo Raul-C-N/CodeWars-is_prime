@@ -21,16 +21,29 @@ Requirements
 
 
 -------------------------------------------------------------------------------------------------------
-    Approach notes (in portuguese):
+    APPROACH NOTES:
     
-    ANOTAÇÕES DE ABORDAGEM
+    # trial test method
+    1) given a number "n", check if it is divisible by any number between 2 and square root of "n";
+    2) if it is divisible, then "n" is a composite number;
+    3) if it is NOT, "n" is a prime number.
+
+    PERFORMANCE UPGRADE (Not implemented)
+        a) Create an array containing all prime numbers from 0 to 200;
+        b) test if "n" is divisible by any number in this array BEFORE activating the trial test method code;
+        b.1) case the number is divisible, "n" is composite;
+        b.2) case the number is NOT divisible by any number in the array, the program should proceed to the trial method described above (steps 1, 2 and 3).
+
+
+
+    ANOTAÇÕES DE ABORDAGEM (portuguese version)
 
     opção matemática = teste de divisão
         1) dado um número 'n', checar se é divisível por qualquer número primo entre 2 e raiz de 'n'.
         2) se afirmativo, 'n' é composto
         3) se negativo, 'n' é primo
 
-        ACELERADOR:
+        ACELERADOR (não implementado):
         a)criar conjunto com todos os números primos de 0 a 200
         b) verificar a divisibilidade de 'n' por qualquer número deste conjunto
         b.1) caso afirmativo, o número é composto
